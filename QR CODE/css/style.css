@@ -14,12 +14,7 @@ html {
   background-color: hsl(212, 45%, 89%);
 }
 
-.container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100%;
-}
+
 
 .card {
   background-color: white;
