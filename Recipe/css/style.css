@@ -1,0 +1,202 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: hsl(30, 54%, 90%);
+  margin: 50px;
+  font-family: "Outfit";
+
+  display: grid;
+  place-items: center;
+}
+
+.sheet {
+  background-color: hsl(0, 0%, 100%);
+  max-width: 700px;
+  width: 100%;
+  padding: 30px;
+  border-radius: 10px;
+}
+
+img {
+  max-width: 700px;
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.heading1 {
+  font-family: "Young Serif";
+  font-size: 40px;
+  font-weight: 200;
+  color: hsl(24, 5%, 18%);
+  margin-bottom: 10px;
+}
+
+.text1 {
+  font-size: 16px;
+  color: hsl(30, 10%, 34%);
+  margin-bottom: 30px;
+}
+
+/*PREPARATION TIME SECTION*/
+
+.prepare {
+  background-color: hsl(30, 54%, 90%);
+  padding: 25px;
+  border-radius: 10px;
+  margin-bottom: 30px;
+}
+
+.heading2 {
+  color: hsl(332, 51%, 32%);
+  font-size: 17px;
+  margin-bottom: 10px;
+}
+
+.prepare-list {
+  padding-left: 20px;
+  line-height: 2;
+  font-size: 15px;
+}
+
+.pre-item::marker {
+  color: hsl(332, 51%, 32%);
+}
+
+.pre-span {
+  color: hsl(30, 10%, 34%);
+}
+
+.pre-item::before {
+  content: "";
+  padding-left: 15px;
+}
+
+/***********************/
+
+/*INGREDIENTS SECTION*/
+
+.heading3 {
+  font-family: "Young Serif";
+  font-size: 24px;
+  font-weight: 400;
+  color: hsl(14, 45%, 36%);
+  margin-bottom: 10px;
+}
+
+.ingredients-list {
+  padding-left: 25px;
+  font-size: 15px;
+  color: hsl(30, 10%, 34%);
+  line-height: 2;
+  margin-bottom: 25px;
+}
+
+.ing-item::before {
+  content: "";
+  padding-left: 15px;
+}
+
+.ing-item::marker {
+  color: hsl(14, 45%, 36%);
+}
+
+/***********************/
+
+/*INSTRUCTIONS SECTION*/
+.heading4 {
+  font-family: "Young Serif";
+  font-size: 24px;
+  font-weight: 400;
+  color: hsl(14, 45%, 36%);
+  margin: 15px 0;
+}
+
+.instructions-list {
+  font-size: 15px;
+  padding-left: 25px;
+  line-height: 1.7;
+  color: hsl(30, 10%, 34%);
+  margin-bottom: 25px;
+  text-wrap: balance;
+}
+
+.ins-item {
+  padding-left: 15px;
+}
+
+.ins-item::marker {
+  color: hsl(14, 45%, 36%);
+  font-weight: 700;
+}
+
+/***********************/
+
+/*NUTRITION SECTION*/
+.heading5 {
+  margin: 15px 0px;
+  font-family: "Young Serif";
+  font-size: 24px;
+  font-weight: 400;
+  color: hsl(14, 45%, 36%);
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td {
+  border-bottom: 1px solid hsl(30, 18%, 87%);
+  padding: 10px;
+}
+
+.col1 {
+  color: hsl(30, 10%, 34%);
+}
+
+.col2 {
+  color: hsl(14, 45%, 36%);
+  font-weight: 700;
+}
+
+/***********************/
+
+/*MEDIA QUERIES*/
+@media screen and (max-width: 491px) {
+  .heading1 {
+    font-size: 38px;
+  }
+
+  .ing-item {
+    text-indent: -20px;
+    padding-left: 20px;
+  }
+}
+
+@media screen and (max-width: 476px) {
+  .heading1 {
+    font-size: 32px;
+  }
+}
+
+@media screen and (max-width: 414px) {
+  .heading1 {
+    font-size: 27px;
+  }
+
+  .pre-item {
+    text-indent: -20px;
+    padding-left: 20px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .heading1 {
+    font-size: 25px;
+  }
+}
