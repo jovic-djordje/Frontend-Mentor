@@ -1,0 +1,121 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: hsl(0, 0%, 8%);
+  font-family: "Inter";
+  margin: 50px;
+
+  display: grid;
+  place-items: center;
+}
+
+.profile {
+  background-color: hsl(0, 0%, 12%);
+  padding: 30px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+img {
+  max-width: 96px;
+  width: 100%;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+h2 {
+  color: white;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+h4 {
+  color: hsl(75, 94%, 57%);
+  font-size: 14px;
+  margin-bottom: 30px;
+}
+
+p {
+  color: hsla(0, 0%, 100%, 0.842);
+  font-size: 14px;
+  margin-bottom: 30px;
+}
+
+.socials {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.socials li {
+  list-style: none;
+  padding: 10px 80px;
+  border-color: hsl(0, 0%, 20%);
+  background-color: hsl(0, 0%, 20%);
+  border-radius: 5px;
+  text-align: center;
+  color: hsla(0, 0%, 100%, 0.842);
+  font-weight: 600;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.socials li a {
+  text-decoration: none;
+  color: hsla(0, 0%, 100%, 0.842);
+}
+
+.links:hover {
+  background-color: hsl(75, 94%, 57%);
+}
+
+.links:hover a {
+  color: hsl(0, 0%, 8%);
+}
+
+/*MEDIA QUERIES*/
+
+@media screen and (max-width: 450px) {
+  body {
+    margin: 100px auto;
+  }
+
+  p {
+    font-size: 13px;
+  }
+
+  .links a {
+    font-weight: 700;
+    white-space: nowrap;
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  body {
+    margin: 40px auto;
+  }
+
+  p {
+    font-size: 13px;
+  }
+
+  .links a {
+    white-space: nowrap;
+    font-size: 14px;
+    font-weight: 700;
+  }
+}
