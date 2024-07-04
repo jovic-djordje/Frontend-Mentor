@@ -1,0 +1,104 @@
+body {
+  margin: 50px;
+  background-color: hsl(47, 88%, 63%);
+  font-family: "Figtree";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.blog-card {
+  max-width: 400px;
+  width: 100%;
+  background-color: hsl(0, 0%, 100%);
+  box-shadow: 10px 10px;
+  border: 2px solid hsl(0, 0%, 7%);
+  border-radius: 20px;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 5px;
+}
+
+.blog-img {
+  max-width: 350px;
+
+  padding: 20px;
+  border-radius: 30px;
+}
+
+.text {
+  margin-left: 20px;
+}
+
+.learn a {
+  background-color: hsl(47, 88%, 63%);
+  padding: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+
+  text-decoration: none;
+  color: hsl(0, 0%, 7%);
+  font-weight: 800;
+}
+
+p {
+  color: hsl(0, 0%, 7%);
+}
+
+.date {
+  font-size: 17px;
+  color: hsl(0, 0%, 50%);
+  line-height: 1.5;
+}
+
+h2 {
+  color: hsl(0, 0%, 7%);
+  font-weight: 800;
+  font-size: 25.5px;
+}
+
+h2:hover {
+  color: hsl(47, 88%, 63%);
+  cursor: pointer;
+}
+
+.greg {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  justify-content: flex-start;
+  margin-bottom: 10px;
+  padding-left: 15px;
+  color: hsl(0, 0%, 7%);
+  font-weight: 800;
+}
+
+/*MEDIA QUERIES*/
+
+@media screen and (max-width: 485px) {
+  h2 {
+    font-size: 19px;
+  }
+
+  .date {
+    font-size: 13px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .date {
+    font-size: 11px;
+  }
+
+  h2 {
+    font-size: 17px;
+  }
+
+  .blog-img {
+    width: 85%;
+  }
+}
