@@ -1,0 +1,176 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: hsl(30, 38%, 92%);
+  margin: 96px;
+
+  display: grid;
+  place-items: center;
+}
+
+.product {
+  display: flex;
+  max-width: 500px;
+  width: 100%;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.chanel {
+  width: 250px;
+  height: 100%;
+  object-fit: cover;
+}
+
+.perfume {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  background-color: hsl(0, 0%, 100%);
+}
+
+span {
+  font-family: "Montserrat";
+  text-transform: uppercase;
+  margin-bottom: 15px;
+  font-weight: 500;
+  color: hsl(228, 12%, 48%);
+  font-size: 13px;
+  letter-spacing: 3px;
+}
+
+h2 {
+  font-family: "Fraunces";
+  font-weight: 700;
+  margin-bottom: 25px;
+  font-size: 30px;
+  line-height: 1;
+}
+
+.text {
+  color: hsl(228, 12%, 48%);
+  font-size: 13px;
+  line-height: 1.5;
+  font-weight: 500;
+  font-family: "Montserrat";
+  margin-bottom: 25px;
+}
+
+.price {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.price1 {
+  font-size: 30px;
+  font-family: "Fraunces";
+  color: hsl(158, 36%, 37%);
+  font-weight: 700;
+}
+
+.price2 {
+  font-size: 14px;
+  font-family: "Fraunces";
+  text-decoration: line-through;
+  color: hsl(228, 12%, 48%);
+}
+
+button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+
+  font-family: "Montserrat";
+  font-weight: 600;
+  background-color: hsl(158, 36%, 37%);
+  color: hsl(30, 38%, 92%);
+  border: none;
+  border-radius: 5px;
+  padding: 10px 0;
+  margin-top: 30px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: hsl(158, 36%, 17%);
+}
+
+/*MEDIA QUERIES*/
+
+@media screen and (max-width: 665px) {
+  .product {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 310px;
+    width: 100%;
+  }
+
+  .img {
+    margin-bottom: -5px;
+  }
+
+  .chanel {
+    height: 250px;
+    width: 310px;
+  }
+}
+
+@media screen and (max-width: 491px) {
+  h2 {
+    font-size: 28px;
+  }
+}
+
+@media screen and (max-width: 474px) {
+  h2 {
+    font-size: 26px;
+  }
+}
+
+@media screen and (max-width: 457px) {
+  h2 {
+    font-size: 24px;
+  }
+}
+
+@media screen and (max-width: 440px) {
+  h2 {
+    font-size: 22px;
+  }
+}
+
+@media screen and (max-width: 423px) {
+  h2 {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .product {
+    margin: 0 auto;
+  }
+
+  .chanel {
+    height: 250px;
+  }
+
+  h2 {
+    font-size: 18px;
+  }
+
+  span {
+    font-size: 11px;
+  }
+
+  .price1 {
+    font-size: 24px;
+  }
+}
