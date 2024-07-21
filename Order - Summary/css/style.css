@@ -1,0 +1,154 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: hsl(225, 100%, 94%);
+  display: grid;
+  place-items: center;
+  font-family: "Red Hat Display";
+  margin: 20px 0px;
+}
+
+.summary {
+  max-width: 400px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+}
+
+.illustration {
+  border-radius: 10px 10px 0px 0px;
+}
+
+.order {
+  width: 100%;
+  background-color: hsl(225, 100%, 98%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  border-radius: 0px 0px 10px 10px;
+}
+
+h1 {
+  color: hsl(223, 47%, 23%);
+  margin-bottom: 15px;
+}
+
+.text {
+  color: hsl(224, 23%, 55%);
+  font-size: 16px;
+  font-weight: 500;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.plan {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 95px;
+  margin-bottom: 30px;
+  background-color: hsl(225, 100%, 97%);
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.annual {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+
+.annual-plan {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 3px;
+}
+
+.annual-plan-text {
+  color: hsl(223, 47%, 23%);
+  font-weight: 700;
+}
+
+.cost {
+  color: hsl(224, 23%, 55%);
+}
+
+span a {
+  font-weight: 700;
+  color: hsl(245, 75%, 52%);
+}
+
+span a:hover {
+  text-decoration: none;
+  color: hsl(245, 75%, 64%);
+}
+
+.payment-btn {
+  background-color: hsl(245, 75%, 52%);
+  color: hsl(225, 100%, 98%);
+  font-weight: 600;
+  font-size: 16px;
+  border: none;
+  border-radius: 10px;
+  padding: 15px 90px;
+  box-shadow: 0px 20px 10px hsl(225, 100%, 94%);
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+.payment-btn:hover {
+  background-color: hsl(245, 75%, 64%);
+}
+
+.cancel-btn {
+  font-size: 16px;
+  font-weight: 600;
+  color: hsl(224, 23%, 55%);
+  background: none;
+  border: none;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.cancel-btn:hover {
+  color: hsl(223, 47%, 23%);
+}
+
+/* MEDIA QUERIES*/
+@media screen and (max-width: 500px) {
+  .summary {
+    display: grid;
+    place-items: center;
+  }
+
+  .illustration {
+    width: 90%;
+  }
+
+  .order {
+    width: 90%;
+  }
+
+  .plan {
+    width: 100%;
+  }
+
+  .annual-plan-text {
+    font-size: 15px;
+  }
+
+  .payment-btn {
+    font-size: 13px;
+    font-weight: 700;
+  }
+}
