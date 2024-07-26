@@ -1,0 +1,156 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: hsl(257, 40%, 49%);
+}
+
+.wrapper {
+  background-image: url("../images/bg-desktop.svg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  margin: 0px auto;
+}
+
+.header {
+  padding-top: 30px;
+  padding-bottom: 50px;
+  max-width: 1200px;
+  width: 100%;
+  margin: 0px auto;
+}
+
+.main-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 1200px;
+  width: 100%;
+  margin: 0px auto;
+  gap: 50px;
+  font-family: "Poppins";
+}
+
+.main-heading {
+  color: #fff;
+  font-size: 38px;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+.main-text {
+  font-size: 15.5px;
+  font-weight: 400;
+  color: #fff;
+  margin-bottom: 20px;
+  font-family: "Open Sans";
+  line-height: 1.7;
+}
+
+.main-btn {
+  color: hsl(257, 40%, 49%);
+  width: 130px;
+  padding: 7px 0px;
+  border-radius: 20px;
+  border: none;
+  font-size: 16px;
+  box-shadow: 2px 2px 12px 0px black;
+  font-family: "Poppins";
+}
+
+.main-btn:hover {
+  cursor: pointer;
+  background-color: hsl(300, 69%, 71%);
+  color: #fff;
+}
+
+footer {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 15px;
+  max-width: 1200px;
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 30px;
+  margin: 0px auto;
+}
+
+.icons {
+  width: 35px;
+  height: 35px;
+  border: 1px solid #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+
+.icons:hover {
+  border: 1px solid hsl(300, 69%, 71%);
+  cursor: pointer;
+}
+
+.icon {
+  fill: #fff;
+}
+
+.icon:hover {
+  fill: #e882e8;
+  cursor: pointer;
+}
+
+/* MEDIA QUERIES */
+@media screen and (max-width: 1200px) {
+  .header {
+    width: 90%;
+  }
+
+  .main-section {
+    width: 90%;
+  }
+
+  footer {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .main-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .right-side {
+    text-align: center;
+  }
+
+  footer {
+    justify-content: center;
+  }
+
+  .main-section-image {
+    width: 90%;
+  }
+
+  .wrapper {
+    background-image: url("../images/bg-mobile.svg");
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .main-heading {
+    font-size: 29px;
+  }
+
+  .main-text {
+    font-size: 15px;
+  }
+}
