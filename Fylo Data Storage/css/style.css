@@ -1,0 +1,258 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Raleway";
+  background-color: hsl(229, 57%, 11%);
+  background-image: url("../images/bg-desktop.png");
+  background-position: right bottom;
+  background-repeat: no-repeat;
+  background-size: 100% 50%;
+  height: 100vh;
+  background-attachment: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.fylo-section {
+  width: 100%;
+}
+
+.fylo-section-holder {
+  display: flex;
+  justify-content: center;
+  align-items: self-end;
+  gap: 25px;
+}
+
+.fylo-data-storage-left-side {
+  max-width: 300px;
+  width: 100%;
+  border-radius: 10px 70px 10px 10px;
+  padding: 35px 0px;
+  background-color: hsl(228, 56%, 26%);
+}
+
+.width-holder {
+  width: 80%;
+  margin: 0px auto;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.logo {
+  max-width: 120px;
+}
+
+.icons-holder {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 15px;
+}
+
+.icons-bg-color {
+  background-color: hsl(229, 57%, 11%);
+  border-radius: 10px;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.fylo-data-storage-right-side {
+  background-color: hsl(228, 56%, 26%);
+  max-width: 500px;
+  width: 100%;
+  padding: 20px 0px;
+  border-radius: 10px;
+  position: relative;
+}
+
+.fylo-data-storage-right-side-width-holder {
+  gap: 0px;
+  padding: 10px 0px;
+  width: 87%;
+}
+
+.text {
+  font-size: 14px;
+  color: hsl(229, 7%, 55%);
+  font-weight: 400;
+  margin-bottom: 12px;
+}
+
+.text span {
+  text-transform: uppercase;
+  font-weight: 700;
+  color: hsl(243, 100%, 93%);
+}
+
+.load {
+  background-color: hsl(229, 57%, 11%);
+  width: 100%;
+  height: 20px;
+  border-radius: 20px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.load span {
+  position: relative;
+  width: 77%;
+  height: 20px;
+  border-radius: 20px;
+  border: 2px solid hsl(229, 57%, 11%);
+  background-image: linear-gradient(
+    to right,
+    hsl(6, 100%, 80%),
+    hsl(335, 100%, 65%)
+  );
+}
+
+.load span::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 95%;
+  right: 0;
+  background-color: hsl(243, 100%, 93%);
+  border-radius: 50%;
+  width: 16px;
+  height: 16px;
+}
+
+.gigabite {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 5px;
+}
+
+.gigabite span {
+  color: hsl(243, 100%, 93%);
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.gb-left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 7px;
+  max-width: 150px;
+  width: 100%;
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 10px 0px;
+  position: absolute;
+  top: -40px;
+  right: 33px;
+}
+
+.gb-left::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: -30%;
+  border-bottom: 30px solid transparent;
+  border-right: 25px solid #fff;
+}
+
+.gb-left p {
+  font-size: 34px;
+  color: hsl(229, 57%, 11%);
+  font-weight: 700;
+}
+
+.gb-left span {
+  color: hsl(229, 7%, 55%);
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+/* MEDIA QUERIES */
+@media screen and (max-width: 850px) {
+  .fylo-section-holder {
+    width: 90%;
+    margin: 0px auto;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  body {
+    background-image: url("../images/bg-mobile.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+
+  .fylo-section {
+    padding: 30px 0px;
+  }
+
+  .fylo-section-holder {
+    max-width: 500px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 15px;
+  }
+
+  .gb-left {
+    top: 80%;
+    right: 30%;
+  }
+
+  .gb-left::after {
+    content: none;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .logo {
+    max-width: 150px;
+  }
+
+  .icons-bg-color {
+    width: 55px;
+    height: 55px;
+  }
+
+  .icons-holder {
+    gap: 20px;
+  }
+
+  .icon {
+    width: 30px;
+    height: 30px;
+    aspect-ratio: 3/2;
+    object-fit: contain;
+  }
+
+  .fylo-data-storage-left-side {
+    max-width: 450px;
+  }
+
+  .text {
+    text-align: center;
+    margin-bottom: 17px;
+  }
+
+  .fylo-data-storage-right-side {
+    padding: 30px 0px;
+  }
+
+  .fylo-data-storage-right-side-width-holder {
+    width: 80%;
+  }
+}
