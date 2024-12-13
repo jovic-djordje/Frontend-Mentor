@@ -1,0 +1,151 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Overpass";
+  background-color: hsl(216, 12%, 8%);
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.card {
+  max-width: 400px;
+  width: 100%;
+  background-color: hsl(213, 19%, 18%);
+  padding: 30px 0px;
+  border-radius: 20px;
+}
+
+.card-width-holder {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 20px;
+  width: 85%;
+  margin: 0px auto;
+}
+
+picture {
+  width: 50px;
+  height: 50px;
+  background-color: hsl(213, 19%, 21%);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+.card-heading {
+  color: hsl(0, 0%, 100%);
+  font-size: 28px;
+}
+
+.card-text {
+  font-size: 15px;
+  color: hsl(217, 12%, 63%);
+  line-height: 1.5;
+  margin-top: -10px;
+}
+
+.num-holder {
+  max-width: 340px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  gap: 25px;
+  margin-bottom: 5px;
+}
+
+.num {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: hsl(213, 19%, 21%);
+  color: hsl(217, 12%, 63%);
+  font-weight: 700;
+  aspect-ratio: 3/2;
+}
+
+.num:hover {
+  background-color: hsl(25, 97%, 53%);
+  cursor: pointer;
+  color: hsl(216, 12%, 8%);
+}
+
+.background {
+  color: hsl(216, 12%, 8%);
+  background-color: #ffffff;
+}
+
+.btn {
+  width: 100%;
+  padding: 15px 0px;
+  border-radius: 20px;
+  border: none;
+  text-transform: uppercase;
+  font-family: "Overpass";
+  letter-spacing: 1px;
+  color: hsl(216, 12%, 8%);
+  font-weight: 700;
+  background-color: hsl(25, 97%, 53%);
+}
+
+.btn:hover {
+  background-color: #ffffff;
+  cursor: pointer;
+}
+
+.hidden {
+  display: none;
+}
+
+/* THANK YOU CARD */
+.thank-card-img {
+  max-width: 200px;
+  width: 100%;
+}
+
+.text-holder {
+  background-color: hsl(213, 19%, 21%);
+  padding: 5px 0px;
+  max-width: 180px;
+  width: 100%;
+  border-radius: 20px;
+  color: hsl(25, 97%, 53%);
+  margin: 7px 0px;
+}
+
+.text-holder p {
+  font-size: 15px;
+}
+
+.width {
+  align-items: center;
+  text-align: center;
+}
+
+/* MEDIA QUERIES */
+@media screen and (max-width: 450px) {
+  .card {
+    width: 95%;
+  }
+
+  .num {
+    width: 40px;
+    height: 40px;
+  }
+}
