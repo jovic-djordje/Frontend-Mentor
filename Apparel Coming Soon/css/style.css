@@ -1,0 +1,275 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Josefin Sans";
+}
+
+main {
+  height: 100vh;
+}
+
+.page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.left-page-side {
+  background-image: url(../images/bg-pattern-desktop.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.left-side-width-holder {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  height: 100vh;
+  width: 46%;
+  margin: 0px auto;
+  padding-top: 60px;
+}
+
+.logo {
+  max-width: 180px;
+  width: 100%;
+  margin-bottom: 110px;
+}
+
+.text-holder {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.heading {
+  font-size: 75px;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  color: hsl(0, 6%, 24%);
+}
+
+.heading span {
+  color: hsl(0, 36%, 70%);
+  font-weight: 300;
+}
+
+.text {
+  line-height: 1.5;
+  font-size: 16px;
+  color: hsl(0, 36%, 70%);
+  margin-bottom: 15px;
+}
+
+.input-holder {
+  display: flex;
+  align-items: center;
+  position: relative;
+  max-width: 490px;
+  width: 100%;
+}
+
+.input {
+  max-width: 430px;
+  width: 100%;
+  padding: 15px 20px;
+  border-radius: 50px;
+  border: 1px solid hsl(0, 36%, 70%);
+  background: linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%));
+}
+
+.input::placeholder {
+  color: hsl(0, 36%, 70%);
+  font-weight: 400;
+  font-family: "Josefin Sans";
+}
+
+.input:focus {
+  outline-color: hsl(0, 36%, 70%);
+}
+
+.error {
+  content: "";
+  position: absolute;
+  top: 12px;
+  left: 310px;
+}
+
+.btn {
+  position: absolute;
+  content: "";
+  top: 0;
+  right: 12px;
+  border-radius: 50px;
+  border: none;
+  background: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+  max-width: 90px;
+  width: 100%;
+  padding: 12px 0px;
+  box-shadow: 0px 5px 15px hsl(0, 80%, 86%);
+  cursor: pointer;
+}
+
+.span-text {
+  font-size: 14px;
+  color: hsl(0, 93%, 68%);
+  padding: 0px 20px;
+}
+
+.subscribe {
+  color: hsl(0, 6%, 24%);
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 22px;
+  letter-spacing: 5px;
+}
+
+.subscribe:hover {
+  text-decoration: line-through hsl(0, 6%, 24%);
+  cursor: pointer;
+}
+
+.hidden {
+  display: none;
+}
+
+.image {
+  height: 100vh;
+}
+
+.mobile-img {
+  display: none;
+}
+
+@media screen and (max-width: 1420px) {
+  .left-side-width-holder {
+    padding-top: 30px;
+  }
+
+  .logo {
+    margin-bottom: 60px;
+  }
+
+  .heading {
+    font-size: 60px;
+  }
+
+  .btn {
+    right: -1px;
+  }
+
+  .error {
+    left: 70%;
+  }
+}
+
+@media screen and (max-width: 1240px) {
+  .text {
+    font-size: 16px;
+  }
+
+  .left-side-width-holder {
+    width: 60%;
+  }
+
+  .input-holder {
+    max-width: 380px;
+  }
+
+  .error {
+    left: 65%;
+  }
+}
+
+@media screen and (max-width: 1050px) {
+  .text {
+    font-size: 14px;
+  }
+
+  .image {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 980px) {
+  .left-side-width-holder {
+    width: 75%;
+  }
+}
+
+@media screen and (max-width: 880px) {
+  .page {
+    flex-direction: column;
+  }
+
+  .left-page-side {
+    background-image: none;
+  }
+
+  .left-side-width-holder {
+    width: 100%;
+  }
+
+  .logo-holder {
+    width: 90%;
+    margin: 0px auto;
+  }
+
+  .logo {
+    margin-bottom: 20px;
+    max-width: 200px;
+  }
+
+  .image {
+    display: none;
+  }
+
+  .mobile-img {
+    display: block;
+    width: 100%;
+  }
+
+  .text-holder {
+    width: 90%;
+    margin: 0px auto;
+    text-align: center;
+    align-items: center;
+    padding-bottom: 20px;
+  }
+}
+
+@media screen and (max-width: 580px) {
+  .heading {
+    font-size: 50px;
+  }
+
+  .logo {
+    margin-bottom: 0px;
+  }
+
+  .text {
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 460px) {
+  .subscribe {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .error {
+    left: 60%;
+  }
+
+  .subscribe {
+    font-size: 13px;
+  }
+}
