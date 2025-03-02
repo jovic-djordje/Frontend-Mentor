@@ -1,0 +1,407 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.hidden {
+  display: none;
+}
+
+body {
+  background-color: hsl(235, 18%, 26%);
+  font-family: "Roboto";
+  display: grid;
+  place-items: center;
+  height: 100vh;
+}
+
+/* FORM */
+.form {
+  background-color: hsl(0, 0%, 100%);
+  max-width: 850px;
+  width: 100%;
+  border-radius: 30px;
+}
+
+.form-width-holder {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 95%;
+  padding: 20px 0px;
+  margin: 0px auto;
+}
+
+/* FORM LEFT SIDE */
+
+.left-form-side {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+  width: 100%;
+}
+
+.left-form-side-holder {
+  width: 90%;
+  margin: 0px auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.heading {
+  font-size: 56px;
+  font-weight: 700;
+  color: hsl(234, 29%, 20%);
+}
+
+.text {
+  color: hsl(235, 18%, 26%);
+  line-height: 1.3;
+}
+
+/* LIST */
+.list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.list-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  color: hsl(235, 18%, 26%);
+}
+
+/* INPUT */
+.input-holder {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  width: 90%;
+  margin: 0px auto;
+  gap: 20px;
+}
+
+.input {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 7px;
+  max-width: 350px;
+  width: 100%;
+  margin-bottom: -3px;
+}
+
+.invalid-email-message {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.invalid-email-message span {
+  color: hsl(4, 100%, 67%) !important ;
+}
+
+.mail-label {
+  font-size: 12px;
+  font-weight: 700;
+  color: hsl(234, 29%, 20%);
+}
+
+.input-field {
+  width: 100%;
+  padding: 14px 0px;
+  padding-left: 25px;
+  border-radius: 7px;
+  border: 1px solid hsl(0, 0%, 58%);
+}
+
+.input-field:focus {
+  background-color: transparent !important;
+  color: #000 !important;
+  border: 1px solid hsl(0, 0%, 58%) !important;
+}
+
+.btn {
+  background-color: hsl(234, 29%, 20%);
+  color: hsl(0, 0%, 100%);
+  font-family: inherit;
+  max-width: 350px;
+  width: 100%;
+  border-radius: 7px;
+  border: 1px solid hsl(234, 29%, 20%);
+  padding: 14px 0px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-image: linear-gradient(
+    90deg,
+    hsl(350, 100%, 67%),
+    hsl(13, 100%, 63%)
+  );
+  box-shadow: 0 20px 25px rgb(255 106 56 / 0.2),
+    0 20px 30px rgb(255 166 56 / 0.12);
+  border: 1px solid transparent;
+}
+
+/* FORM RIGHT SIDE*/
+.form-img {
+  max-width: 350px;
+  width: 100%;
+}
+
+.img-form-mobile {
+  display: none;
+}
+
+/* SUBSCRIBE CART */
+.subscribe-cart {
+  max-width: 450px;
+  width: 100%;
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 30px;
+}
+
+.subscribe-cart-holder {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 35px;
+  width: 75%;
+  margin: 0px auto;
+  padding: 50px 0px;
+}
+
+.sub-text-holder {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.sub-heading {
+  color: hsl(234, 29%, 20%);
+  font-size: 56px;
+  line-height: 55px;
+}
+
+.sub-text {
+  line-height: 1.4;
+}
+
+#valid-email {
+  color: hsl(234, 29%, 20%);
+  font-weight: 700;
+}
+
+/* MEDIA QUERIES */
+@media screen and (max-width: 860px) {
+  .form {
+    width: 95%;
+  }
+
+  .subscribe-cart {
+    width: 95%;
+  }
+
+  .heading {
+    font-size: 50px;
+  }
+
+  .text {
+    font-size: 15px;
+  }
+
+  .list-item {
+    font-size: 14px;
+  }
+
+  .input {
+    max-width: 300px;
+  }
+
+  .form-btn {
+    max-width: 300px;
+  }
+}
+
+@media screen and (max-width: 770px) {
+  .heading {
+    font-size: 44px;
+  }
+
+  .sub-heading {
+    font-size: 50px;
+  }
+
+  .text {
+    font-size: 13px;
+  }
+
+  .sub-text {
+    font-size: 14px;
+  }
+
+  .list-item {
+    font-size: 12px;
+  }
+
+  .input {
+    max-width: 280px;
+  }
+
+  .mail-label {
+    font-size: 11px;
+  }
+
+  .form-btn {
+    max-width: 280px;
+  }
+
+  .form-img {
+    max-width: 320px;
+  }
+}
+
+@media screen and (max-width: 690px) {
+  .form {
+    max-width: 600px;
+  }
+
+  .form-width-holder {
+    flex-direction: column;
+    gap: 20px;
+    padding: 18px 0px 20px 0px;
+  }
+
+  .left-form-side-holder {
+    width: 95%;
+    align-items: flex-start;
+    text-align: center;
+  }
+
+  .heading {
+    font-size: 50px;
+  }
+
+  .text {
+    font-size: 16px;
+  }
+
+  .list-item {
+    font-size: 16px;
+  }
+
+  .input {
+    max-width: 550px;
+  }
+
+  .mail-label {
+    font-size: 12px;
+  }
+
+  .form-btn {
+    max-width: 550px;
+  }
+
+  .form-img {
+    display: none;
+  }
+
+  .img-form-mobile {
+    display: block;
+    width: 98%;
+    border-radius: 30px;
+  }
+}
+
+@media screen and (max-width: 520px) {
+  body {
+    background-color: hsl(0, 0%, 100%);
+    height: 0vh;
+  }
+
+  .form {
+    width: 100%;
+    border-radius: 0;
+  }
+
+  .form-width-holder {
+    padding: 0px 0px 20px 0px;
+    width: 100%;
+    height: 100vh;
+    justify-content: space-between;
+  }
+
+  .left-form-side-holder {
+    width: 92%;
+    align-items: flex-start;
+    text-align: start;
+  }
+
+  .list-item {
+    font-size: 15px;
+  }
+
+  .input-holder {
+    margin-bottom: 20px;
+  }
+
+  .subscribe-cart-holder {
+    height: 100vh;
+    width: 95%;
+    position: relative;
+  }
+
+  .sub-btn {
+    max-width: 550px;
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 30px;
+  }
+
+  .sub-img {
+    margin-top: -150px;
+  }
+
+  .img-form-mobile {
+    width: 100%;
+    border-radius: 0;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .heading {
+    font-size: 46px;
+  }
+
+  .sub-heading {
+    font-size: 46px;
+  }
+
+  .text {
+    font-size: 14px;
+  }
+
+  .list-item {
+    font-size: 13px;
+  }
+}

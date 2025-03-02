@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Newsletter Sign-up Form</title>
+  </head>
+  <body>
+    <!-- FORM CART START -->
+    <div class="form">
+      <!-- FORM WIDTH HOLDER START -->
+      <div class="form-width-holder">
+        <!-- MOBILE IMAGE START -->
+        <img
+          src="images/illustration-sign-up-mobile.svg"
+          alt="illustration-sign-up-mobile"
+          class="img-form-mobile"
+        />
+        <!-- MOBILE IMAGE ENDs -->
+
+        <!-- LEFT SIDE FORM START -->
+        <div class="left-form-side">
+          <!-- LEFT SIDE FORM HOLDER START -->
+          <div class="left-form-side-holder">
+            <h1 class="heading">Stay updated!</h1>
+            <p class="text">
+              Join 60,000+ product managers receiving monthly updates on:
+            </p>
+            <ul class="list">
+              <li class="list-item">
+                <img src="images/icon-list.svg" alt="icon-list" />Product
+                discovery and building what matters
+              </li>
+              <li class="list-item">
+                <img src="images/icon-list.svg" alt="icon-list" />Measuring to
+                ensure updates are a success
+              </li>
+              <li class="list-item">
+                <img src="images/icon-list.svg" alt="icon-list" />And much more!
+              </li>
+            </ul>
+          </div>
+          <!-- LEFT SIDE FORM HOLDER ENDs -->
+
+          <!-- INPUT FORM HOLDER START -->
+          <div class="input-holder">
+            <div class="input">
+              <div class="invalid-email-message">
+                <p class="mail-label">Email address</p>
+                <span class="error-message mail-label hidden"
+                  >Valid email requied</span
+                >
+              </div>
+              <input
+                type="email"
+                placeholder="email@company.com"
+                class="input-field"
+              />
+            </div>
+            <button class="btn form-btn" onclick="validEmail()">
+              Subscribe to monthly newsletter
+            </button>
+          </div>
+          <!-- INPUT FORM HOLDER ENDs -->
+        </div>
+        <!-- LEFT SIDE FORM ENDs -->
+
+        <!-- FORM RIGHT SIDE START -->
+        <img
+          src="images/illustration-sign-up-desktop.svg"
+          alt="illustration-sign-up-desktop"
+          class="form-img"
+        />
+        <!-- FORM RIGHT SIDE ENDs -->
+      </div>
+      <!-- FORM WIDTH HOLDER ENDs -->
+    </div>
+    <!-- FORM CART ENDs -->
+
+    <!-- SUCCESS SUB START  -->
+    <div class="subscribe-cart hidden">
+      <div class="subscribe-cart-holder">
+        <img src="images/icon-success.svg" alt="icon-success" class="sub-img" />
+        <div class="sub-text-holder">
+          <h1 class="sub-heading">Thanks for subscribing!</h1>
+          <p class="sub-text text">
+            A confirmation email has been sent to
+            <span id="valid-email"></span>. Please open it and click the button
+            inside to confirm your subscription.
+          </p>
+        </div>
+        <button class="sub-btn btn" onclick="dismissMessage()">
+          Dismiss message
+        </button>
+      </div>
+    </div>
+    <!-- SUCCESS SUB ENDs  -->
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
