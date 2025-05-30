@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Alata&family=Bebas+Neue&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <title>Tip Calculator App</title>
+  </head>
+  <body>
+    <main>
+      <img src="images/logo.svg" alt="logo" class="logo" />
+      <section class="cart">
+        <div class="cart-width-holder">
+          <!-- CART LEFT SIDE START -->
+          <div class="cart-left-side">
+            <!-- BILL SECTION START -->
+            <div class="bill-section">
+              <div class="input-label-holder">
+                <p class="bill-text">Bill</p>
+                <p class="error-text bill-error">Can't be zero</p>
+              </div>
+              <input type="number" placeholder="0" class="bill-input" />
+              <img
+                src="images/icon-dollar.svg"
+                alt="icon-dollar"
+                class="icon"
+              />
+            </div>
+            <!-- BILL SECTION END -->
+
+            <!-- TIP SECTION START -->
+            <div class="tip-section">
+              <p class="tip-text">Select tip %</p>
+              <div class="tip-btn-holder">
+                <div class="left-side-btns">
+                  <button class="btn">5%</button>
+                  <button class="btn">10%</button>
+                  <button class="btn">15%</button>
+                </div>
+
+                <div class="right-side-btns">
+                  <button class="btn">25%</button>
+                  <button class="btn">50%</button>
+                  <input type="number" placeholder="Custom" class="btn-input" />
+                </div>
+              </div>
+            </div>
+            <!-- TIP SECTION END -->
+
+            <!-- NUM OF PEOPLE START -->
+            <div class="num-of-ppl-section">
+              <div class="input-label-holder">
+                <p class="num-of-ppl-text">Number of <span>people</span></p>
+                <p class="error-text ppl-error">Can't be zero</p>
+              </div>
+              <input type="number" placeholder="0" class="num-of-ppl-input" />
+              <img
+                src="images/icon-person.svg"
+                alt="icon-person"
+                class="icon icon-person"
+              />
+            </div>
+            <!-- NUM OF PEOPLE END -->
+          </div>
+          <!-- CART LEFT SIDE END -->
+
+          <!-- CART RIGHT SIDE START -->
+          <div class="cart-right-side">
+            <div class="cart-right-side-holder">
+              <div class="tip-amount">
+                <div class="tip-amount-text">
+                  <p>Tip amount</p>
+                  <p class="person-txt">/ person</p>
+                </div>
+                <span>$0.00</span>
+              </div>
+
+              <div class="total">
+                <div class="total-text">
+                  <p>Total</p>
+                  <p class="person-txt">/ person</p>
+                </div>
+                <span>$0.00</span>
+              </div>
+              <button class="right-side-btn btn">reset</button>
+            </div>
+          </div>
+          <!-- CART RIGHT SIDE START -->
+        </div>
+      </section>
+    </main>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
